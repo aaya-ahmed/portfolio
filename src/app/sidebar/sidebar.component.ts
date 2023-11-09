@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, HostListener, Output } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
@@ -9,5 +9,11 @@ export class SidebarComponent {
   @Output()closeevent:EventEmitter<boolean>=new EventEmitter()
   closesidebar(){
     this.closeevent.emit(true)
+  }
+  @HostListener('window:resize',['$event.target'])
+  resize($event:any){
+    if($event.innerWidth>980){
+      this.closesidebar();
+    }
   }
 }
