@@ -1,0 +1,63 @@
+.main{
+    background-color: white;
+    border-radius: 1.6rem;
+    height: 75%;
+}
+.main>div{
+    height: 88%;
+    overflow-y: auto;
+}
+h2{
+    color: #0B0909;
+    font-family: Poppins;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.4rem; /* 100% */
+    letter-spacing: 1px;
+    padding: 1rem;
+    position: relative;
+}
+h2::after{
+    content: "";
+    display: inline-block;
+    width: 350px;
+    height: 2px;
+    background-image: linear-gradient(to right,#149ddd,#146bdd);
+    line-height: 40px;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    margin-left:1rem ;
+}
+.skills-body{
+    padding-left: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills-body .contact{
+    display: flex;
+    width: 45%;
+    border-radius: 20px;
+    padding: 0.5rem;
+    background-color: #F2F5F9;
+    margin: 0.5rem;
+    align-items: center;
+    gap:10px;
+}
+.skills-body .contact img{
+    width: 50px;
+    height: 50px;
+}
+@media(max-width:750px){
+    h2::after {width: 150px;}
+    h2{
+        font-size: 1.4rem;
+    }
+    .skills-body{
+        padding: 0;
+    }
+    .skills-body .contact {
+        width: 100%;
+    }
+}

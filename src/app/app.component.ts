@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  toggle:boolean=false
   title = 'portfolio';
+  constructor(){}
+  showsidebar(){
+    this.toggle=true
+  }
+  close(){
+    this.toggle=false
+  }
 }

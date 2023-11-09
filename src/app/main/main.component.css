@@ -1,0 +1,96 @@
+.main{
+    background-color: white;
+    border-radius: 1.6rem;
+    height: 75%;
+}
+.main>div{
+    height: 88%;
+    overflow-y: auto;
+}
+.main>div>section:nth-child(1){
+    width: 90%;
+    margin: 0 auto 1rem auto;
+    background: aliceblue;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #0000000a;
+}
+.main>div>section:nth-child(1)>p{
+    padding: 1rem;
+    line-height: 2;
+    font-size: 15px;
+    text-align: justify;
+    word-spacing: 5px;
+}
+.section1{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+h2{
+    color: #0B0909;
+    font-family: Poppins;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.4rem; /* 100% */
+    letter-spacing: 1px;
+    padding: 1rem;
+    position: relative;
+}
+h2::after{
+    content: "";
+    display: inline-block;
+    width: 350px;
+    height: 2px;
+    background-image: linear-gradient(to right,#149ddd,#146bdd);
+    line-height: 40px;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    margin-left:1rem ;
+}
+.education,.experiance,.skills{
+    width: 50%;
+}
+.education .header, .experiance .header{
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    padding-left: 1rem;
+}
+.education .header span, .experiance .header span{
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.7em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.8rem; /* 166.667% */
+    letter-spacing: 0.1rem;
+}
+.education .info-body .contact, .experiance .info-body .contact{
+    background-color: #149ddd17;
+    border-radius: 0.6rem;
+    margin: 1rem 3rem;
+    padding: 1rem;
+}
+.education .info-body .contact h4, .experiance .info-body .contact h4,
+.education .info-body .contact p, .experiance .info-body .contact p{
+    color: rgba(26, 16, 3, 0.50);
+    font-family: Raleway;
+    font-size: 13.869px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.education .info-body .contact p, .experiance .info-body .contact p{
+    color: black;
+}
+@media(max-width:750px){
+    .section1{
+        display: block;
+    }
+    .education,.experiance{
+        width: 100%;
+    }
+    h2::after {width: 185px;}
+}
