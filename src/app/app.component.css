@@ -26,6 +26,7 @@ button{
 @media(max-width:980px) {
     .sidebar{
         display: none;
+        box-shadow: 340px 0px 0px 2000px rgba(0, 0, 0, 0.508);
     }
     .content{
         width: 90%;

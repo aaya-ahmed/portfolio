@@ -52,10 +52,10 @@ h2::after{
 @media(max-width:750px){
     h2::after {width: 150px;}
     h2{
-        font-size: 1.4rem;
+        font-size: 1.7em;
     }
     .skills-body{
-        padding: 0;
+        padding: 0 1rem;
     }
     .skills-body .contact {
         width: 100%;
