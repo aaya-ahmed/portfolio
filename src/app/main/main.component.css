@@ -50,7 +50,7 @@ h2::after{
     margin-left:1rem ;
 }
 .education,.experiance,.skills{
-    width: 50%;
+    width: 95%;
 }
 .education .header, .experiance .header{
     display: inline-flex;
